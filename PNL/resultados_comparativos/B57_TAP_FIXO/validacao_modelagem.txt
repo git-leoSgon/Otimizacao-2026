@@ -1,0 +1,10 @@
+Sistema: B57_TAP_FIXO
+Penetrações: [np.int64(0), np.int64(20), np.int64(30), np.int64(40), np.int64(50), np.int64(60)]
+Barras MMGD/BESS: [np.int64(16), np.int64(17), np.int64(47), np.int64(18), np.int64(53), np.int64(31), np.int64(50), np.int64(15), np.int64(57), np.int64(29), np.int64(13), np.int64(49)]
+Todas as barras MMGD são Tipo=0: SIM
+BESS injeta/absorve apenas potência ativa: SIM (não existe variável Q_bess)
+Capacidade BESS/MMGD: 80% em todas as barras e penetrações: SIM
+Tensões de todas as barras geradoras fixas no valor-base: SIM
+Barra de carga com maior flutuação: 31
+Linha com maior amplitude e inversão: 8-9
+Maior resíduo relativo BESS: 3.064e-06

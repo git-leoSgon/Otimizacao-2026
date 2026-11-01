@@ -1,0 +1,126 @@
+from pathlib import Path
+
+
+PB = 100.0
+SEED = 123
+SISTEMA = "B57"
+
+PENETRACAO_TESTE = 50
+PENETRACOES = [0, 20, 30, 40, 50, 60]
+BARRAS_MMGD = [16, 17, 47, 18, 53, 31, 50, 15, 57, 29, 13, 49]
+
+FATOR_POTENCIA_CARGA = 0.95
+VMIN = 0.95
+VMAX = 1.05
+VMAX_BARRAS = {}
+
+TENSAO_GERADORES = {
+    1: 1.040,
+    2: 1.010,
+    3: 0.985,
+    6: 0.980,
+    8: 1.005,
+    9: 0.980,
+    12: 1.015,
+}
+
+DEMANDA_REATIVA_MVAR = {
+    1: 17.0,
+    2: 88.0,
+    3: 21.0,
+    5: 4.0,
+    6: 2.0,
+    8: 22.0,
+    9: 26.0,
+    10: 2.0,
+    12: 24.0,
+    13: 2.3,
+    14: 5.3,
+    15: 5.0,
+    16: 3.0,
+    17: 8.0,
+    18: 9.8,
+    19: 0.6,
+    20: 1.0,
+    23: 2.1,
+    25: 3.2,
+    27: 0.5,
+    28: 2.3,
+    29: 2.6,
+    30: 1.8,
+    31: 2.9,
+    32: 0.8,
+    33: 1.9,
+    35: 3.0,
+    38: 7.0,
+    41: 3.0,
+    42: 4.4,
+    43: 1.0,
+    44: 1.8,
+    47: 11.6,
+    49: 8.5,
+    50: 10.5,
+    51: 5.3,
+    52: 2.2,
+    53: 10.0,
+    54: 1.4,
+    55: 3.4,
+    56: 2.2,
+    57: 2.0,
+}
+
+SHUNTS_BARRAS_MVAR = {
+    18: 10.0,
+    25: 5.9,
+    53: 6.3,
+}
+INJECOES_REATIVAS_FIXAS_MVAR = {}
+CONTROLES_TAP = {}
+TAPS_INICIAIS = {}
+
+TOLERANCIA_TAP = 5.0e-3
+TOLERANCIA_REATIVO_MVAR = 1.0e-3
+TOLERANCIA_RETORNO_PV = 2.0e-3
+MAX_ITERACOES_PV_PQ = 30
+FAIXA_CARGA = (0.75, 1.00)
+FAIXA_MMGD = (0.90, 1.00)
+
+FRACAO_BESS = 0.80
+DURACAO_BESS = 1.0
+RAMPA_BESS = 0.25
+RAMPA_GERADORES = 0.60
+SOC_INICIAL = 0.25
+SOC_MIN = 0.20
+SOC_MAX = 0.90
+ETA_CARGA = 0.95
+ETA_DESCARGA = 0.95
+
+PESO_DEFICIT = 1.0e7
+PESO_PERDAS = 100.0
+PESO_CUSTO_GERACAO = 0.01
+PESO_DESVIO_PG = 2000.0
+PESO_DESVIO_PG_BASE = 500.0
+PESO_PLIQ = 10.0
+PESO_TENSAO = 1000.0
+PESO_CONTROLE_TAP = 10000.0
+PESO_MOVIMENTACAO_BESS = 0.10
+PESO_VARIACAO_BESS = 20.0
+
+TOLERANCIA_NR = 1.0e-8
+MAX_ITERACOES_NR = 50
+TOLERANCIA_IPOPT = 1.0e-6
+TOLERANCIA_ACEITAVEL_IPOPT = 1.0e-4
+MAX_ITERACOES_IPOPT = 3000
+MAX_ITERACOES_MINLP = 50
+TEMPO_LIMITE_MINLP = None
+
+PARTIDAS_MINLP = ["solar_30"]
+OTIMIZAR_MODOS_BESS = True
+USAR_PRE_SOLUCAO_CONTINUA = True
+PRE_SOLUCAO_PENETRACAO_MIN = 30.0
+MAX_ITERACOES_PRE_SOLUCAO = 10
+VERSAO_SOLUCAO_BESS = "minlp_pvpq_desvio_pg500_v5"
+
+PASTA = Path(__file__).resolve().parent
+ARQUIVO = PASTA / "dados" / "STB_57.xlsx"
+RESULTADOS = PASTA / "resultados" / SISTEMA

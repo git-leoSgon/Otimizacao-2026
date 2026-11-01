@@ -1,0 +1,16 @@
+FPO-CA MULTIPERIODO - COMPARACAO DAS PENETRACOES
+====================================================================================================================================
+
+Pen.  MMGD MW  BESS MW  Perdas sem  Perdas com  Vmax sem  Vmax com  Linha sem  Linha com  Viol. V sem/com  Deficit  Partida
+   0%     0.00     0.00     238.133     238.133   1.07734   1.07734    55.543%    55.543%      96/    96    0.000  referencia_sem_bess
+  20%   250.16   200.13     216.690     212.445   1.08431   1.08349    55.543%    54.250%     111/   110    0.000  solar_30
+  30%   375.24   300.19     216.021     208.199   1.08790   1.08634    55.543%    54.081%     158/   145    0.000  solar_30
+  40%   500.32   400.26     221.714     209.086   1.09101   1.08906    55.543%    53.938%     181/   176    0.000  solar_30
+  50%   625.40   500.32     233.603     214.981   1.09364   1.09146    55.543%    53.827%     197/   192    0.000  solar_30
+  60%   750.48   600.38     251.550     225.777   1.09580   1.09357    55.543%    53.725%     228/   219    0.000  solar_30
+
+A MMGD disponivel foi integralmente injetada em todos os casos.
+Os geradores convencionais possuem despacho ativo e reativo livre.
+O despacho ativo com BESS possui regularizacao suave em relacao ao caso sem BESS.
+As ultrapassagens da faixa operacional de tensao foram mantidas como resultado.
+Os modos da BESS seguem a partida configurada e as variaveis continuas sao otimizadas pelo IPOPT.

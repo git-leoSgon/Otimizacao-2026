@@ -1,0 +1,10 @@
+Sistema: B118_TAP_FIXO
+Penetrações: [np.int64(0), np.int64(20), np.int64(30), np.int64(40), np.int64(50), np.int64(60)]
+Barras MMGD/BESS: [np.int64(60), np.int64(11), np.int64(78), np.int64(45), np.int64(88), np.int64(82), np.int64(106), np.int64(75), np.int64(95), np.int64(35), np.int64(41), np.int64(3), np.int64(79), np.int64(96), np.int64(47), np.int64(98), np.int64(13), np.int64(118), np.int64(115), np.int64(67)]
+Todas as barras MMGD são Tipo=0: SIM
+BESS injeta/absorve apenas potência ativa: SIM (não existe variável Q_bess)
+Capacidade BESS/MMGD: 80% em todas as barras e penetrações: SIM
+Tensões de todas as barras geradoras fixas no valor-base: SIM
+Barra de carga com maior flutuação: 45
+Linha com maior amplitude e inversão: 8-5
+Maior resíduo relativo BESS: 1.829e-05

@@ -1,0 +1,23 @@
+INVENTARIO DO SISTEMA B57_TAP_FIXO
+================================================================================
+Barras: 57
+Linhas e transformadores: 80
+Geradores convencionais e compensadores sincronos: 7
+Barras com MMGD: 12
+Carga ativa nominal: 1250.80 MW
+Carga reativa nominal: 336.40 MVAr
+Ramos com faixa de tap no arquivo: 0
+Controles de tap ativos no modelo: 0
+Barras com shunt fixo: 3
+Soma algebrica dos shunts: 22.20 MVAr
+Compensador estatico fixo: 0.00 MVAr
+Matriz Ybus finita: True
+
+GRUPOS DE TAP E POSICOES INICIAIS
+--------------------------------------------------------------------------------
+
+COMPENSADORES E SHUNTS FIXOS
+--------------------------------------------------------------------------------
+Barra 18: shunt=10.00 MVAr
+Barra 25: shunt=5.90 MVAr
+Barra 53: shunt=6.30 MVAr
